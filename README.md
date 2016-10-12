@@ -47,7 +47,7 @@ frontend runs at /, backend runs at /backend/
 
 or I got the AMI image in my account. I can add you thru IAM.
 
-#Web Crawling
+##Web Crawling
 all posts are crawled with this HTTP request.
 the tokens / cookies are copied from the browser inspector.
 ```
@@ -65,7 +65,7 @@ q=ig_user(259220806)+%7B+media.after(1353397180899329160%2C+200)+%7B%0A++count%2
 video URLs are obtained manually from DOM inspection due to limited time.
 future improvements: register for auth_token @ instagram API / use scrapy framework to crawl stuff
 
-#Database Architecture
+##Database Architecture
 ZSET (as indexes): chrono (score:UNIX timestamp), likes (score:like count), comments (score:comment count)
 so for sorting with time (chronological order), likes, comments, the sorted result is readily available with: 
 ```
@@ -104,3 +104,4 @@ The sorting can also be customized with a GET param in url encoded JSON with fol
 { "field":"date", "order":"DESC", "isAlpha":true }
 But I have no time to prevent it from injection attacks.
 
+Inline video playback doesn't work for iOS (OS restriction) (I haven't installed iOS 10 to test yet) and some browsers. A bit tricky.

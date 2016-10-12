@@ -1,6 +1,6 @@
 # insta9ram-backend
 
-Demo URL: [http://ec2-54-235-51-216.compute-1.amazonaws.com/](http://ec2-54-235-51-216.compute-1.amazonaws.com/)
+Demo URL: [http://9gag.niyoh.tech/](http://9gag.niyoh.tech/)
 (unfortunately, I forgot to select ap-southeast and deployed it in us-east. I'm trying to clone an instance back to ap-southeast)
 
 #Installation

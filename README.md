@@ -34,11 +34,7 @@ server {
   server_name ec2-54-235-51-216.compute-1.amazonaws.com insta9ram.appicpaas.com 9gag.niyoh.tech;
 
   location / {
-    proxy_http_version 1.1;
-    proxy_set_header Upgrade $http_upgrade;
-    proxy_set_header Connection "upgrade";
-    proxy_set_header Host $host;  
-    proxy_pass         "http://127.0.0.1:3000/";
+    root "/usr/share/nginx/html/";  # from ./public build
   }
   
   location /backend/ {

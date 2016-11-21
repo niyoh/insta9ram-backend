@@ -5,6 +5,10 @@ Demo URL: [http://9gag.niyoh.tech/](http://9gag.niyoh.tech/)
 
 #Installation
 ```
+curl --silent --location https://rpm.nodesource.com/setup_6.x | bash -   # get latest node!!!
+
+# make sure to enable epel repo
+
 yum install redis   # superuser
 npm install -g pm2   # superuser
 
